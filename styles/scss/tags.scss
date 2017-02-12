@@ -1,0 +1,76 @@
+html,
+body {
+   margin:0;
+   padding:0;
+}
+
+body {
+	font-family: $font-base;
+	font-size: $font-size;
+	line-height: $font-line;
+	background: $primary-background;
+	color: $primary-color;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+pre {
+	padding: .25em;
+	background-color: $secondary-background;
+	border: 2px solid $primary-border;
+	border-radius: 3px;
+}
+
+ul, ol {
+	&.no-style {
+		list-style-type: none;
+	}
+}
+
+a, .clickable { 
+	color: $highlight-color;
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+
+	&:hover, &:focus {
+		text-decoration: underline;
+		opacity: 0.9;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
+h1 {
+	font-size: 2em;
+	letter-spacing: 1.6px;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+	border-bottom: solid 2px $primary-border;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+}

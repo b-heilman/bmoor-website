@@ -1,0 +1,25 @@
+.inline {
+	display: inline-block;	
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.ethereal {
+	position: absolute;
+	z-index: -9999;
+}
+
+.split-rows {
+	> *:nth-child(odd) {
+		background-color: rgba(239, 242, 243, 0.6);
+	}
+	> *:nth-child(even) {
+		background-color: rgba(213, 229, 234, 0.6);
+	}
+}

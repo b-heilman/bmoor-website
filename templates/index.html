@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="<%= app %>">
+	<head>
+		<title>Elements</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="cache-control" content="max-age=600" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EDGE; IE=10;" />
+		<link rel="icon" href="/images/png/menu1.png">
+
+		<!-- Stylesheet -->
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,300,100'
+			rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="/main.css?v=<%- build %>">
+		<script src="/vendor.bundle.js?v=<%- build %>"></script>
+		<script>
+			this.name = "elements"; //used so that some links will target the same window when it is opened
+			if (!window.console) { window.console = { log: function() {} }; }
+
+			__appEnv = <%= env %>;
+		</script> 
+	</head>
+	<body>
+		<h5>Loading...</h5>
+
+		<script src="/app.js?v=<%- build %>"></script>
+	</body>
+</html>
