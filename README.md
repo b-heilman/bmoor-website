@@ -8,6 +8,7 @@ First create a repo, this assumes the repo is `git@github.com:USERNAME/REPOSITOR
 
 ```
 git clone git@github.com:b-heilman/bmoor-website.git yourProject
+cd yourProject
 git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 git push --set-upstream origin master
 ```
